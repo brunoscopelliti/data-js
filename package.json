@@ -1,0 +1,33 @@
+{
+  "name": "data-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint index.js lib/**",
+    "pretest": "npm run lint && rollup -c rollup.test-config.js",
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/data-js.git"
+  },
+  "keywords": [],
+  "author": "Bruno Scopelliti",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/data-js/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/data-js#readme",
+  "devDependencies": {
+    "eslint": "5.8.0",
+    "eslint-config-bruno": "2.0.0",
+    "karma": "3.1.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-qunit": "2.1.0",
+    "pre-commit": "1.2.2",
+    "qunit": "2.7.1",
+    "rollup": "0.66.6",
+    "rollup-plugin-includepaths": "0.2.3"
+  }
+}
